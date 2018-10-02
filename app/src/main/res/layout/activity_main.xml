@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harry Potter Quiz"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. When Harry was born?"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+        <RadioGroup
+            android:id="@+id/radio_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/ans_1a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="31th of July"
+            android:padding="8dp"/>
+        <RadioButton
+            android:id="@+id/ans_1b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1st of August"
+            android:padding="8dp"/>
+        <RadioButton
+            android:id="@+id/ans_1c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15th of June"
+            android:padding="8dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Where Harry was left after parents' death?"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <RadioGroup
+            android:id="@+id/radio_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/ans_2a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="at the Blacks'"
+                android:padding="8dp"/>
+            <RadioButton
+                android:id="@+id/ans_2b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="at the Weasleys'"
+                android:padding="8dp"/>
+            <RadioButton
+                android:id="@+id/ans_2c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="at the Dursleys'"
+                android:padding="8dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Who told Harry that he was a wizard?"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <RadioGroup
+            android:id="@+id/radio_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/ans_3a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Petunia Dursley"
+                android:padding="8dp"/>
+            <RadioButton
+                android:id="@+id/ans_3b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rubeus Hagrid"
+                android:padding="8dp"/>
+            <RadioButton
+                android:id="@+id/ans_3c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Albus Dumbledore"
+                android:padding="8dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Who are Harry's best friends?"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <RadioGroup
+            android:id="@+id/radio_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/ans_4a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hermione and Ron"
+                android:padding="8dp"/>
+            <RadioButton
+                android:id="@+id/ans_4b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Draco, Vincent, Gregory"
+                android:padding="8dp"/>
+            <RadioButton
+                android:id="@+id/ans_4c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parvati, Neville"
+                android:padding="8dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. What was Harry's favorite subject?"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <RadioGroup
+            android:id="@+id/radio_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/ans_5a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="potions"
+                android:padding="8dp"/>
+            <RadioButton
+                android:id="@+id/ans_5b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="defence against dark arts"
+                android:padding="8dp"/>
+            <RadioButton
+                android:id="@+id/ans_5c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="divination"
+                android:padding="8dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. What was Harry's deapest desire?"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <RadioGroup
+            android:id="@+id/radio_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/ans_6a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="to be the best"
+                android:padding="8dp"/>
+            <RadioButton
+                android:id="@+id/ans_6b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="to get a warm pair of socks"
+                android:padding="8dp"/>
+            <RadioButton
+                android:id="@+id/ans_6c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="to meet his family"
+                android:padding="8dp"/>
+        </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/sumbit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Submit answers"
+            android:onClick="submit"/>
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:onClick="reset"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
